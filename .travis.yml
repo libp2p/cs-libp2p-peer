@@ -1,0 +1,13 @@
+language: csharp
+solution: LibP2P.Peer.sln
+branches:
+  only:
+   - master
+install:
+  - nuget restore LibP2P.Peer.sln -PackagesDirectory ./packages
+script:
+  - xbuild /p:Configuration=Release LibP2P.Peer.sln
+  - mono ./packages/NUnit.ConsoleRunner.3.5.0/tools/nunit3-console.exe ./LibP2P.Peer.Tests/bin/Release/LibP2P.Peer.Tests.dll
+cache:
+  - directories:
+    - ./packages
