@@ -1,36 +1,56 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibP2P.Peer", "LibP2P.Peer\LibP2P.Peer.csproj", "{D0CF6B9E-34AD-4D5E-AEEC-F3DF6CE3ADC7}"
+# Visual Studio 15
+VisualStudioVersion = 15.0.26124.0
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5073FB14-219B-42B2-8D2F-5FB700D7BA64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibP2P.Peer.Tests", "LibP2P.Peer.Tests\LibP2P.Peer.Tests.csproj", "{A15C80C7-9D19-44B8-A12E-87E5CDBA5F7B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibP2P.Peer", "src\LibP2P.Peer\LibP2P.Peer.csproj", "{537C6DEB-7D45-474E-A557-63E1D1CA3429}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FEBB03E7-29AB-40F5-B441-173F0A439289}"
-	ProjectSection(SolutionItems) = preProject
-		.travis.yml = .travis.yml
-		appveyor.yml = appveyor.yml
-		LICENSE = LICENSE
-		README.md = README.md
-	EndProjectSection
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{6DD31636-6472-4054-B85E-BAAE9AE5FF38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibP2P.Peer.Tests", "test\LibP2P.Peer.Tests\LibP2P.Peer.Tests.csproj", "{680E076A-C3EA-4F2C-921B-2C8C5A25979B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D0CF6B9E-34AD-4D5E-AEEC-F3DF6CE3ADC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D0CF6B9E-34AD-4D5E-AEEC-F3DF6CE3ADC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D0CF6B9E-34AD-4D5E-AEEC-F3DF6CE3ADC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D0CF6B9E-34AD-4D5E-AEEC-F3DF6CE3ADC7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A15C80C7-9D19-44B8-A12E-87E5CDBA5F7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A15C80C7-9D19-44B8-A12E-87E5CDBA5F7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A15C80C7-9D19-44B8-A12E-87E5CDBA5F7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A15C80C7-9D19-44B8-A12E-87E5CDBA5F7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{537C6DEB-7D45-474E-A557-63E1D1CA3429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{537C6DEB-7D45-474E-A557-63E1D1CA3429}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{537C6DEB-7D45-474E-A557-63E1D1CA3429}.Debug|x64.ActiveCfg = Debug|x64
+		{537C6DEB-7D45-474E-A557-63E1D1CA3429}.Debug|x64.Build.0 = Debug|x64
+		{537C6DEB-7D45-474E-A557-63E1D1CA3429}.Debug|x86.ActiveCfg = Debug|x86
+		{537C6DEB-7D45-474E-A557-63E1D1CA3429}.Debug|x86.Build.0 = Debug|x86
+		{537C6DEB-7D45-474E-A557-63E1D1CA3429}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{537C6DEB-7D45-474E-A557-63E1D1CA3429}.Release|Any CPU.Build.0 = Release|Any CPU
+		{537C6DEB-7D45-474E-A557-63E1D1CA3429}.Release|x64.ActiveCfg = Release|x64
+		{537C6DEB-7D45-474E-A557-63E1D1CA3429}.Release|x64.Build.0 = Release|x64
+		{537C6DEB-7D45-474E-A557-63E1D1CA3429}.Release|x86.ActiveCfg = Release|x86
+		{537C6DEB-7D45-474E-A557-63E1D1CA3429}.Release|x86.Build.0 = Release|x86
+		{680E076A-C3EA-4F2C-921B-2C8C5A25979B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{680E076A-C3EA-4F2C-921B-2C8C5A25979B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{680E076A-C3EA-4F2C-921B-2C8C5A25979B}.Debug|x64.ActiveCfg = Debug|x64
+		{680E076A-C3EA-4F2C-921B-2C8C5A25979B}.Debug|x64.Build.0 = Debug|x64
+		{680E076A-C3EA-4F2C-921B-2C8C5A25979B}.Debug|x86.ActiveCfg = Debug|x86
+		{680E076A-C3EA-4F2C-921B-2C8C5A25979B}.Debug|x86.Build.0 = Debug|x86
+		{680E076A-C3EA-4F2C-921B-2C8C5A25979B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{680E076A-C3EA-4F2C-921B-2C8C5A25979B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{680E076A-C3EA-4F2C-921B-2C8C5A25979B}.Release|x64.ActiveCfg = Release|x64
+		{680E076A-C3EA-4F2C-921B-2C8C5A25979B}.Release|x64.Build.0 = Release|x64
+		{680E076A-C3EA-4F2C-921B-2C8C5A25979B}.Release|x86.ActiveCfg = Release|x86
+		{680E076A-C3EA-4F2C-921B-2C8C5A25979B}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{537C6DEB-7D45-474E-A557-63E1D1CA3429} = {5073FB14-219B-42B2-8D2F-5FB700D7BA64}
+		{680E076A-C3EA-4F2C-921B-2C8C5A25979B} = {6DD31636-6472-4054-B85E-BAAE9AE5FF38}
 	EndGlobalSection
 EndGlobal
