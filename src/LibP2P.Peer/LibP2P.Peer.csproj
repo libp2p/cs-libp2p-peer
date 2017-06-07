@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.6</TargetFrameworks>
+    <RuntimeIdentifiers>win7-x64;linux-x64</RuntimeIdentifiers>
+    <Description>LibP2P Peer</Description>
+    <Copyright>Copyright © tabrath 2017</Copyright>
+    <AssemblyTitle>LibP2P.Peer</AssemblyTitle>
+    <VersionPrefix>1.1.0</VersionPrefix>
+    <Authors>tabrath</Authors>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AssemblyName>LibP2P.Peer</AssemblyName>
+    <PackageId>LibP2P.Peer</PackageId>
+    <PackageTags>libp2p peer</PackageTags>
+    <PackageIconUrl>https://raw.githubusercontent.com/libp2p/website/0f6f8c7/static/img/favicon.png</PackageIconUrl>
+    <PackageLicenseUrl>https://github.com/libp2p/cs-libp2p-peer/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/libp2p/cs-libp2p-peer</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/libp2p/cs-libp2p-peer</RepositoryUrl>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>$(DefineConstants);DEBUG</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>$(DefineConstants)</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LibP2P.Crypto" Version="1.1.0" />
+    <PackageReference Include="Multiformats.Hash" Version="1.2.1" />
+  </ItemGroup>
+</Project>
